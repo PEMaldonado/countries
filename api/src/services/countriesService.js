@@ -12,8 +12,9 @@ const getCountryById = async (id) => {
 };
 
 const getCountryByName = async (name) => {
+  console.log(name);
   const country = await Country.findAll({
-    where: { name: { [Op.iLike]: `%${name}` } },
+    where: { name: { [Op.iLike]: `%${name}%` } },
   });
   return country;
 };
