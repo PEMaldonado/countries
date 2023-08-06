@@ -22,3 +22,5 @@ const postActivity = (req, res) => {
 };
 
 export { getActivities, postActivity };
+
+// TERMINAR ACTIVITIES Y RELACIONES ENTRE TABLAS...
